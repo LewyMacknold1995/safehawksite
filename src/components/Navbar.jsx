@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { Link, animateScroll as scroll, } from 'react-scroll'
+import Typed from 'react-typed';
+
 
 
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
@@ -14,7 +16,7 @@ const Navbar = () => {
     <div className='w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg cursor-pointer'>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
-          <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>SafeHawkUI.</h1>
+          <h1 className='text-3xl font-bold mr-4 sm:text-4xl'> SafeHawkUI.</h1>
           <ul className='hidden md:flex'>
           <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
           <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
@@ -29,7 +31,7 @@ const Navbar = () => {
           </button>
           <button className='px-8 py-3'>Sign Up</button>
         </div>
-        <div className='md:hidden mr-4' onClick={handleClick}>
+        <div className='md:hidden mr-4' onClick={handleClick}>§
             {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
           
         </div>
